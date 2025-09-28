@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<title>L'Histoire des Jeux Video</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
 	<style>
 		body {
@@ -12,36 +14,49 @@
 			background-color: rgb(0, 0, 0);
 			color: rgb(134, 131, 125);
 		}
+
+		.bg-custom-green {
+			background-color: #17a017;
+		}
+
+		.table thead th {
+			background-color: #17a017;
+			color: white;
+
+
+		}
 	</style>
 </head>
 
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<nav class="navbar navbar-expand-sm bg-body- ">
+			<nav class="navbar navbar-expand-sm bg-gradient bg-dark">
 
 				<div class=" container-fluid">
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Accueil</a>
+								<a class="nav-link active text-white" aria-current="page" href="#">Accueil</a>
+							</li>
+							<li class="nav-item ">
+								<a class="nav-link text-secondary " href="#">Jeux des années 70</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Jeux des années 70</a>
+								<a class="nav-link text-secondary" href="#">Jeux des années 80</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Jeux des années 80</a>
+								<a class="nav-link text-secondary" href="#">Jeux des années 90</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Jeux des années 90</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Jeux des années 2000</a>
+							<li class="nav-item ">
+								<a class="nav-link text-secondary" href="#">Jeux des années 2000</a>
 							</li>
 						</ul>
 						<form class="d-flex" role="search">
 							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-							<button class="btn btn-outline-success" type="submit">Search</button>
+							<button class="btn bg-custom-green text-white d-flex align-items-center" type="submit">
+								<i class="fa-solid fa-magnifying-glass-location "></i>&nbsp;&nbsp;Rechercher
+							</button>
 						</form>
 					</div>
 				</div>
@@ -51,21 +66,28 @@
 
 	<div class="container">
 		<header>
-			<div>
-				<h1>History Game</h1>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea laborum architecto in
-					deleniti est molestias culpa nobis rem optio, doloribus, sint et ab.</p>
-				<hr>
-				<p>Lorem ipsum dolor sit amet consectetur.</p>
-				<a href="#" role="button">En Savoir plus &nbsp;&nbsp;</a>
-			</div>
+			<div class="row">
+				<div class="col-12 bg-secondary-subtle rounded">
+					<h1 class="display-5"> History Game</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea laborum architecto in
+						deleniti est molestias culpa nobis rem optio, doloribus, sint et ab.</p>
+					<hr>
+					<p>Lorem ipsum dolor sit amet consectetur.</p>
+					<a href="#" class="btn bg-custom-green text-white text-decoration-none mb-2" role="button">En
+						Savoir
+						plus
+						&nbsp;&nbsp;<i class="bi bi-plus-circle-fill"></i>
+					</a>
+				</div>
+			</div><br>
 			<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 		</header>
 		<section>
-			<div>
-				<div>
-					<a href="#">
-						<div>
+			<div class="row">
+				<div class="col-lg-4 rounded">
+					<a href="#"
+						class="list-group-item list-group-item-action bg-custom-green text-white text-decoration-none p-3">
+						<div class="d-flex w-100 justify-content-between">
 							<h5>Lorem ipsum 1</h5>
 							<small>Il y a 3 jours</small>
 						</div>
@@ -73,8 +95,9 @@
 							viverra nec consectetur ante hendrerit.</p>
 						<small>Donec id elit non mi porta.</small>
 					</a>
-					<a href="#">
-						<div>
+					<a href="#"
+						class="list-group-item list-group-item-action bg-white text-secondary text-decoration-none p-3">
+						<div class="d-flex w-100 justify-content-between">
 							<h5>Lorem ipsum 2</h5>
 							<small>Il y a 4 jours</small>
 						</div>
@@ -82,7 +105,8 @@
 							viverra nec consectetur ante hendrerit.</p>
 						<small>Donec id elit non mi porta.</small>
 					</a>
-					<a href="#">
+					<a href="#"
+						class="list-group-item list-group-item-action bg-white text-secondary text-decoration-none border p-3">
 						<div class="d-flex w-100 justify-content-between">
 							<h5 class="mb-1">Lorem ipsum 3</h5>
 							<small class="text-muted">Il y a 5 jours</small>
@@ -92,47 +116,55 @@
 						<small class="text-muted">Donec id elit non mi porta.</small>
 					</a>
 				</div>
-			</div>
-			<div class="col-lg-8">
-				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua.</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum
-					mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis
-					dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim,
-					ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem
-					ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis,
-					pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis.
-				</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum
-					mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis
-					dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim,
-					ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem
-					ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis,
-					pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis.
-				</p>
-				<a class="btn btn-color" href="#"><i class="fa fa-image"></i>&nbsp;&nbsp;Ajouter une photo</a>
-			</div>
+
+				<div class="col-lg-8">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+						labore
+						et dolore magna aliqua.</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum
+						mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis
+						dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue
+						enim,
+						ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor.
+						Lorem
+						ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis,
+						pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat
+						sagittis.
+					</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum
+						mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis
+						dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue
+						enim,
+						ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor.
+						Lorem
+						ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis,
+						pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat
+						sagittis.
+					</p>
+					<a class="btn bg-custom-green text-white text-decoration-none" href="#"><i
+							class="bi bi-card-image"></i>&nbsp;&nbsp;Ajouter une photo</a>
+				</div>
 		</section>
 		<hr />
 		<h3>Et au commencement il y eut ...</h3>
 		<section class="row">
-			<img src="img/Space_Invaders.png" alt="Space Invaders" />
-			<img src="img/Pac_Man.jpg" alt="Pac Man" />
-			<img src="img/Donkey_Kong.jpg" alt="Donkey Kong" />
-			<img src="img/Mario_Bros.jpg" alt="Mario" />
-			<img src="img/Space_Harrier.jpg" alt="Space Harrier" />
-			<img src="img/Sonic_the_Hedgehog.jpg" alt="Sonic" />
+			<img src="img/Space_Invaders.png" alt="Space Invaders" style="max-width: 200px;  max-height: 200px;" />
+			<img src="img/Pac_Man.jpg" alt="Pac Man" style="max-width: 200px;  max-height: 200px;" />
+			<img src="img/Donkey_Kong.jpg" alt="Donkey Kong" style="max-width: 200px;  max-height: 200px;" />
+			<img src="img/Mario_Bros.jpg" alt="Mario" style="max-width: 200px;  max-height: 200px;" />
+			<img src="img/Space_Harrier.jpg" alt="Space Harrier" style="max-width: 200px;  max-height: 200px;" />
+			<img src="img/Sonic_the_Hedgehog.jpg" alt="Sonic" style="max-width: 200px;  max-height: 200px;" />
 		</section>
 		<hr />
 		<h3>Donec ut libero sed arcu vehicula ultricies a non tortor :</h3>
-		<div>
-			<div>
+		<div class="row">
+			<div class="col-4 bg-white rounded border 1 p-0">
 				<div>
-					<div>Lorem ipsum dolor sit amet</div>
-					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
+					<div class="bg-custom-green text-white p-3">Lorem ipsum dolor sit amet</div>
+					<div class="p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
 						Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante
 						hendrerit. Donec et mollis dolor. </div>
-					<div>Footer</div>
+					<div class="bg-custom-green text-white p-3">Footer</div>
 				</div>
 			</div>
 			<br>
@@ -142,11 +174,11 @@
 		<hr />
 		<div>
 			<h3>Quelques jeux célèbres et leur chronologie ... </h3>
-			<table>
+			<table class="table table-dark table-striped table-bordered">
 				<thead>
 					<tr>
-						<th>Nom du jeu</th>
-						<th>Description</th>
+						<th class="col-4 ">Nom du jeu</th>
+						<th class="col-8 ">Description</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -210,6 +242,25 @@
 		</div>
 
 		<hr />
+
+
+		<nav aria-label="...">
+			<ul class="pagination">
+				<li class="page-item">
+					<a class="page-link">Précédent</a>
+				</li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item active">
+					<a class="page-link" href="#" aria-current="page">2</a>
+				</li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item">
+					<a class="page-link" href="#">Suivant</a>
+				</li>
+			</ul>
+		</nav>
+
+
 		<footer>
 			<address>
 				<strong>AFPA DWWM</strong><br>
